@@ -1,0 +1,323 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+body {
+    scroll-padding-top: 75px;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Section */
+header {
+    position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 25px 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0 0 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Home Section */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #ffffff;
+    padding-top: 100px;
+}
+
+.home-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 300%;
+    text-decoration: underline;
+    margin-top: -150px;
+    margin-left: 10px;
+}
+
+.home-section h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 300%;
+    text-decoration: underline;
+    margin-top: -45px;
+    margin-left: 10px;
+}
+
+.home-section h4 {
+    margin-top: -65px;
+    margin-left: 15px;
+    color: #6482AD;
+}
+
+/* Social Media Buttons */
+.social-button {
+    display: inline-block;
+    margin-top: 10px; /* Adjusted margin-top to move buttons down */
+    margin-left: 10px;
+    vertical-align: middle; /* Ensures all elements are aligned vertically */
+    text-align: center; /* Centers the content horizontally */
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.social-button:hover img {
+    transform: scale(1.1);
+}
+
+/* LinkedIn */
+.social-button.linkedin img {
+    background-color: #0077B5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.social-button.linkedin:hover img {
+    background-color: #005582;
+}
+
+/* Instagram */
+.social-button.instagram img {
+    background-color: #3B5998;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Line */
+.social-button.line img {
+    background-color: #00C300;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.social-button.line:hover img {
+    background-color: #009900;
+}
+
+/* CV Button */
+.cv-button {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color, 0.3s;
+    vertical-align: middle; /* Ensures all elements are aligned vertically */
+    text-align: center; /* Centers the content horizontally */
+}
+
+.cv-button:hover {
+    background-color: #FF8343;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.round-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #3A6D8C;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 100px;
+    margin-top: -150px;
+}
+
+.text-container {
+    text-align: left;
+}
+
+/* About Section */
+#about {
+    padding: 100px 20px;
+    background-color: #fff;
+    max-width: 850px;
+    margin: 200px auto;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+#about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Portfolio Section */
+#project {
+    padding: 100px 20px;
+    background-color: #fff; /* White background */
+    margin-top: 800px;
+}
+
+#project h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-item {
+    display: inline-block;
+    margin: 15px;
+    width: 300px;
+    text-align: left;
+    background-color: white; /* White background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: none; /* No box shadow */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.project-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 20px;
+    background-color: #fff; /* White background */
+    margin-top: 800px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Style the form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 40vw;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#contact-form input {
+    height: 40px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
